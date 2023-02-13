@@ -5,4 +5,5 @@ from LIST.views import *
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', todo),
+    path('delete/<int:id>/', delete_task),
 ]
